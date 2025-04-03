@@ -41,8 +41,8 @@ If the GraphQL server connection fails, the BFF returns a 500 error to the clien
 The connection to the GraphQL server is closed when the client stream ends.
 
 # Future Improvements 
-support http1 
-support API streaming for a true end-to-end streaming solution
-implement batch fetching for APIs that support pagination (parallel batch fetching?) 
-implement pagination if client needs more control
-implement Zod runtime validations in BFF to ensure data wont break the UI render function
+- support http1 
+- support API streaming for a true end-to-end streaming solution
+- implement batch fetching for APIs that support pagination (parallel batch fetching?) 
+- implement pagination if client needs more control
+- implement Zod runtime validations in BFF to ensure data wont break the UI render function
