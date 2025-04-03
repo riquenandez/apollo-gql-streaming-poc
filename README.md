@@ -21,11 +21,11 @@ all data will be returned to the client. However, smart adapters can be implemen
 
 When a client request arrives (bffServer.on('stream', ...)), the BFF:
 
-    - Connects to the GraphQL server using http2.connect.
+- Connects to the GraphQL server using http2.connect.
 
-    - Creates a new request (graphqlClient.request) to the GraphQL endpoint (/graphql).
+- Creates a new request (graphqlClient.request) to the GraphQL endpoint (/graphql).
 
-    - Pipes the client’s request body (e.g., a GraphQL query in JSON) to the GraphQL server if it’s a POST request.
+- Pipes the client’s request body (e.g., a GraphQL query in JSON) to the GraphQL server if it’s a POST request.
 
 # Response Piping:
 - The GraphQL server’s response headers are forwarded to the client via clientStream.respond.
